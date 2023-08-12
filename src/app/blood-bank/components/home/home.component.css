@@ -1,0 +1,22 @@
+#mainHome {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainHome p {
+  font-size: 40px;
+  color: rgb(228, 202, 202);
+  font-weight: bold;
+  animation: pulseAnimation 2s ease-in-out infinite;
+  font-family: 'Kaushan Script';
+  text-shadow: 1px 1px 3px white;
+}
+
+@media (max-width: 768px) {
+  #mainHome p {
+    font-size: 30px;
+  }
+}

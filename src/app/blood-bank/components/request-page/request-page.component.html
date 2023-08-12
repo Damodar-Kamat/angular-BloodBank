@@ -1,0 +1,23 @@
+<div class="form-container">
+    <form [formGroup]="requestForm" (ngSubmit)="requestBlood()">
+        <div class="innerForm">
+            <label for="bloodType"> BloodType: </label>
+            <select id="bloodType" formControlName="bloodType">
+                <option value="A_Post">A_Post</option>
+                <option value="A_Neg">A_Neg</option>
+                <option value="B_Post">B_Post</option>
+                <option value="B_Neg">B_Neg</option>
+                <option value="O_Post">O_Post</option>
+                <option value="O_Neg">O_Neg</option>
+                <option value="AB_Post">AB_Post</option>
+                <option value="AB_Neg">AB_Neg</option>
+            </select>
+        </div>
+        <div class="innerForm">
+            <label for="bloodUnits"> BloodUnit: </label>
+            <input type="number" id="bloodUnits" formControlName="bloodUnits" />
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>

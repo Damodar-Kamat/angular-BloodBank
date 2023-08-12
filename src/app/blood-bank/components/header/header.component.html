@@ -1,0 +1,13 @@
+<div id="MainHeader">
+    <img src="/assets/lifestream-logo.png" />
+
+    <p>Blood Bank System</p>
+    <div id="headerBtn">
+        <button routerLink="/home" routerLinkActive="active-button">Home</button>
+        <button routerLink="/requestpage" routerLinkActive="active-button">Request Blood</button>
+        <button routerLink="/addbloodbank" [disabled]="!adminUser" routerLinkActive="active-button" [ngClass]="{'disabled-button': !adminUser}">Add Blood Bank</button>
+        <button routerLink="/updatebloodbank" [disabled]="!adminUser" routerLinkActive="active-button" [ngClass]="{'disabled-button': !adminUser}">Update Blood</button>
+        <div *ngIf="!signedIn"><button routerLink="/">Sign In</button></div>
+        <div *ngIf="signedIn"><button (click)="signOut()">Sign Out</button></div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="form-container">
+    <form [formGroup]="signInForm" (ngSubmit)="signinSubmit()">
+        <span *ngIf="!validUser">Wrong Username or Password</span>
+        <div class="innerForm">
+            <label for="Username"> Username: </label>
+            <input type="text" id="Username" formControlName="Username" />
+        </div>
+        <div class="innerForm">
+            <label for="Password"> Password: </label>
+            <input type="password" id="Password" formControlName="Password" />
+        </div>
+
+        <button type="submit">Submit</button>
+        <p>Not Signed Up <a routerLink="/signup">SignUp</a></p>
+    </form>
+</div>

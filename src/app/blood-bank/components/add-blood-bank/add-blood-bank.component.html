@@ -1,0 +1,80 @@
+<div class="form-container">
+    <form class="formMain" [formGroup]="addForm" (ngSubmit)="addBloodBank()">
+        <div class="innerForm">
+            <label for="bloodBankId">
+                Blood Bank ID:
+            </label>
+            <input type="number" id="bloodBankId" formControlName="bloodBankId" >
+        </div>
+        <div class="innerForm">
+            <label for="bloodBankName">
+                Blood Bank Name:
+            </label>
+            <input type="text" id="bloodBankName" formControlName="bloodBankName" >
+        </div>
+        <div class="innerForm">
+            <label for="phoneNumber">
+                Phone Number:
+            </label>
+            <input type="text" id="phoneNumber" formControlName="phoneNumber" >
+        </div>
+        <div class="innerForm">
+            <label for="email">
+                Email:
+            </label>
+            <input type="text" id="email" formControlName="email" >
+        </div>
+        <div class="innerForm">
+            <label for="a_Post">
+                A+Ve:
+            </label>
+            <input type="number" id="a_Post" formControlName="a_Post" >
+        </div>
+        <div class="innerForm">
+            <label for="a_Neg">
+                A-Ve:
+            </label>
+            <input type="number" id="a_Neg" formControlName="a_Neg" >
+        </div>
+        <div class="innerForm">
+            <label for="b_Post">
+                B+Ve:
+            </label>
+            <input type="number" id="b_Post" formControlName="b_Post" >
+        </div>
+        <div class="innerForm">
+            <label for="b_Neg">
+                B-Ve:
+            </label>
+            <input type="number" id="b_Neg" formControlName="b_Neg" >
+        </div>
+        <div class="innerForm">
+            <label for="o_Post">
+                O+Ve:
+            </label>
+            <input type="number" id="o_Post" formControlName="o_Post" >
+        </div>
+        <div class="innerForm">
+            <label for="o_Neg">
+                O-Ve:
+            </label>
+            <input type="number" id="o_Neg" formControlName="o_Neg" >
+        </div>
+        <div class="innerForm">
+            <label for="ab_Post">
+                AB+Ve:
+            </label>
+            <input type="number" id="ab_Post" formControlName="ab_Post" >
+        </div>
+        <div class="innerForm">
+            <label for="ab_Neg">
+                AB-Ve:
+            </label>
+            <input type="number" id="ab_Neg" formControlName="ab_Neg" >
+        </div>
+        <div class="center-button">
+        <button type="submit">Submit</button>
+        </div>
+    </form>
+
+</div>

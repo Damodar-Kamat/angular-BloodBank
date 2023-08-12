@@ -1,0 +1,15 @@
+<div class="form-container">
+    <form [formGroup]="signUpForm" (ngSubmit)="signupSubmit()">
+        <span *ngIf="!validUser">Username or Password is required!!!</span>
+        <div class="innerForm">
+            <label for="Username"> Username: </label>
+            <input type="text" id="Username" formControlName="Username" />
+        </div>
+        <div class="innerForm">
+            <label for="Password"> Password: </label>
+            <input type="password" id="Password" formControlName="Password" />
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
